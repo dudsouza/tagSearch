@@ -7,6 +7,6 @@ router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
 });
 
-router.get('/search', search);
+router.post('/search', search);
 
 module.exports = router;
